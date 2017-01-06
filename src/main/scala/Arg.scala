@@ -6,7 +6,7 @@ trait Arg extends App {
   private lazy val argsbool0 = args filter (x => x.endsWith("=y") || x.endsWith("=n"))
   private lazy val argsnumb0 = args filter (x => x.split('=').last.filter(x => x != '.' && x != '-').forall(x => x.isDigit))
   private lazy val argslist0 = args filter (x => x.contains(","))
-  private lazy val argstext0 = args diff argsbool0 diff argsnumb0 diff argslist0
+  private lazy val argstext0 = args //diff argsbool0 diff argsnumb0 diff argslist0
 
   lazy val argsall = args map parse toMap
   lazy val argsbool1 = argsbool0 map parse toMap
