@@ -1,3 +1,5 @@
+package traits
+
 import java.io.{File, PrintWriter}
 
 import scala.io.Source

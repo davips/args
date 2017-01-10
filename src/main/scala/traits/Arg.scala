@@ -1,3 +1,5 @@
+package traits
+
 import java.io.Serializable
 
 import scala.language.postfixOps
